@@ -41,6 +41,6 @@ const styles = {
     fontSize: ["14px", null, "16px"],
     lineHeight: [1.86, null, 2.2],
     mt: [5],
-    maxWidth: 570,
+    // maxWidth: 570,
   },
 };

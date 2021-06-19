@@ -9,7 +9,7 @@ const Subscribe = () => {
         <SectionHeading
           sx={styles.heading}
           title="Pensaran belum?"
-          description="Hanya perlu beberapa menit saja untuk memulai lalu menudara 🚀"
+          description="Hanya perlu beberapa menit saja untuk memulai lalu mengudara 🚀"
         />
         <Box css={{ display: "flex", justifyContent: "center" }}>
           <Button>Get Started</Button>
