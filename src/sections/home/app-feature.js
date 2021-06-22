@@ -3,6 +3,7 @@ import { jsx, Box, Grid, Flex, Container, Image, Text } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import { LearnMore } from "components/link";
 import app from "assets/images/app.png";
+// import app from "assets/images/illustration-2.png";
 import emoji from "assets/images/icons/emoji.png";
 import check from "assets/images/icons/check-circle.png";
 

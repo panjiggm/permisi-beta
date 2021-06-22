@@ -61,7 +61,7 @@ const data = [
       monthly: 10000,
       annual: 10000 * 12 - 10,
     },
-    isRecommended: false,
+    isRecommended: true,
     buttonText: "Mulai Sekarang",
     demo: "https://kumpul-rasa.vercel.app/",
     features: [
@@ -106,9 +106,9 @@ const data = [
       monthly: 25000,
       annual: 25000 * 12 - 10,
     },
-    isRecommended: true,
+    isRecommended: false,
     buttonText: "Segera Hadir",
-    demo: "https://http.cat/",
+    demo: null,
     features: [
       {
         id: 1,

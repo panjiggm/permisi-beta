@@ -47,13 +47,17 @@ const PriceTable = ({ price, isAnnual }) => {
         <Button sx={styles.button} variant="primaryMd">
           {price.buttonText}
         </Button>
-        <a
-          href={price.demo}
-          target="_blank_"
-          sx={styles.link}
-          variant="primaryMd">
-          Demo
-        </a>
+        {price.demo !== null ? (
+          <a
+            href={price.demo}
+            target="_blank_"
+            sx={styles.link}
+            variant="primaryMd">
+            Demo
+          </a>
+        ) : (
+          <div />
+        )}
       </Box>
     </Box>
   );
