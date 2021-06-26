@@ -44,7 +44,7 @@ const NavbarDrawer = () => {
         <Box as="ul" sx={styles.navbar}>
           {menuItems.map(({ path, label }, i) => (
             <Box as="li" key={i}>
-              <Link activeClass="active">
+              <Link activeClass="active" to="">
                 <LinkNext href={`/${path}`}>
                   <a className="nav-item" sx={styles.itemLink}>
                     {label}

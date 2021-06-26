@@ -1,87 +1,22 @@
+import { useState } from "react";
 import { Box, Container } from "theme-ui";
 import PopularCard from "components/cards/popular-card";
 import SectionHeading from "components/section-heading";
-
-const popularCourseData = [
-  {
-    title: "Entry-Level",
-    reviewCount: "1.0 (Standar)",
-    watchCount: "0 pengguna",
-    icon: "💩",
-    starCount: 1,
-    expanded: true,
-    list: [
-      {
-        content: "Pesan via WhatsApp",
-      },
-      {
-        content: "Unlimited produk item",
-      },
-    ],
-  },
-  {
-    title: "Midrange",
-    reviewCount: "3.0 (Lumayan)",
-    watchCount: "1 pengguna",
-    icon: "😺",
-    starCount: 3,
-    expanded: false,
-    list: [
-      {
-        content: "Pesan via WhatsApp",
-      },
-      {
-        content: "Unlimited produk item",
-      },
-      {
-        content: "Produk detail",
-      },
-      {
-        content: "Custom domain",
-      },
-    ],
-  },
-  {
-    title: "Flagship",
-    reviewCount: "5.0 (Greget)",
-    watchCount: "0 pengguna",
-    icon: "🤖",
-    starCount: 5,
-    expanded: false,
-    list: [
-      {
-        content: "Pesan via WhatsApp",
-      },
-      {
-        content: "Unlimited produk item",
-      },
-      {
-        content: "Produk detail",
-      },
-      {
-        content: "Custom domain",
-      },
-      {
-        content:
-          "Fitur lainya (like, add to cart, checkout, delivery options, dll)",
-      },
-      {
-        content: "Pembayaran via Bank atau E-wallet",
-      },
-    ],
-  },
-];
+import FormRegister from "./FormRegister";
+import { packageData } from "./dataPackage";
 
 const Products = () => {
+  const [packageSelect, setPackageSelect] = useState("Entry-Level");
+
   return (
-    <Box as="section" id="courses" sx={styles.section}>
+    <Box as="section" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
           title="Mulai berlangganan"
           description="Tunggu apa lagi"
         />
-        {popularCourseData.map((course, index) => (
+        {packageData.map((course, index) => (
           <Box sx={styles.popularCourse.col} key={index}>
             <PopularCard
               key={index}
@@ -92,6 +27,7 @@ const Products = () => {
               reviewCount={course.reviewCount}
               watchCount={course.watchCount}
               icon={course.icon}
+              setPackageSelect={setPackageSelect}
             />
           </Box>
         ))}
@@ -100,6 +36,7 @@ const Products = () => {
           title="Daftar"
           description="Isi form berikut secara lengkap!"
         />
+        <FormRegister pckgSelected={packageSelect} />
       </Container>
     </Box>
   );
@@ -126,8 +63,9 @@ const styles = {
     },
   },
   heading2: {
+    textAlign: "center",
     mt: 150,
-    mb: 10,
+    mb: 50,
     h2: {
       fontSize: [6, null, null, 8],
     },

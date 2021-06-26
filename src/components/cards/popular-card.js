@@ -8,6 +8,7 @@ import {
   FaCheckCircle,
   FaUser,
 } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const PopularCard = (props) => {
   const [status, setStatus] = useState(props.expanded);
@@ -55,9 +56,19 @@ const PopularCard = (props) => {
             </Text>
           </Box>
           <Box sx={styles.popularCard.buttonBox}>
-            <Button sx={styles.popularCard.courseBtn} varient="buttons.primary">
-              Pilih paket
-            </Button>
+            <Link
+              activeClass="active"
+              className="formReg"
+              to="formReg"
+              spy={true}
+              smooth={true}
+              duration={1000}>
+              <Button
+                sx={styles.popularCard.courseBtn}
+                varient="buttons.primary">
+                Daftar sekarang
+              </Button>
+            </Link>
             {status === true ? (
               <>
                 <FaAngleUp onClick={handleClick} width={16} />

@@ -14,6 +14,7 @@ export default {
     accent: "#609", // a contrast color for emphasizing UI
     dark: "#10132D",
     link: "#4F96FF", // default link color
+    success: "#22C55E",
 
     // highlight	a background color for highlighting text
     modes: {
@@ -26,6 +27,7 @@ export default {
       },
     },
   },
+
   fonts: {
     body: "DM Sans, sans-serif",
     // body:
@@ -168,6 +170,20 @@ export default {
       width: 48,
       height: 48,
       borderRadius: 99999,
+    },
+  },
+  alerts: {
+    primary: {
+      color: "background",
+      bg: "primary",
+    },
+    failed: {
+      color: "background",
+      bg: "primary",
+    },
+    success: {
+      color: "background",
+      bg: "success",
     },
   },
   // variants for buttons

@@ -9,7 +9,7 @@ import Switch from "components/switch";
 const data = [
   {
     id: 1,
-    title: "Entry Level",
+    title: "💩 Entry Level",
     subtitle:
       "Untuk kamu yang pingin coba-coba dulu. Kalo udah nyaman, hubungi kami ya :)",
     amount: {
@@ -54,7 +54,7 @@ const data = [
   },
   {
     id: 2,
-    title: "Mid-Range",
+    title: "😺 Mid-Range",
     subtitle:
       "Seharga semangkok Seblak, makin terpercaya dengan punya domain sendiri",
     amount: {
@@ -99,7 +99,7 @@ const data = [
   },
   {
     id: 3,
-    title: "Flagship",
+    title: "🤖 Flagship",
     subtitle:
       "Brand kamu udah bagus? tapi belum punya web resminya, berati kamu cocoknya disini",
     amount: {
