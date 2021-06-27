@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import Link from "next/link";
 import { jsx, Box, Container, Button } from "theme-ui";
 import SectionHeading from "components/section-heading";
 
@@ -12,7 +13,9 @@ const Subscribe = () => {
           description="Hanya perlu beberapa menit saja untuk memulai lalu mengudara 🚀"
         />
         <Box css={{ display: "flex", justifyContent: "center" }}>
-          <Button>Get Started</Button>
+          <Link href="/register">
+            <Button>Mulai Sekarang</Button>
+          </Link>
         </Box>
       </Container>
     </Box>

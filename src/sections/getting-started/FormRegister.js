@@ -32,7 +32,7 @@ const FormRegister = () => {
   } = useForm();
 
   const domainWatch = watch("domain", false);
-  const packageWatch = watch("package");
+  const packageWatch = watch("package", "Entry-Level");
 
   const onRegister = async (fields) => {
     setLoading(true);
@@ -60,12 +60,6 @@ const FormRegister = () => {
       id="formReg"
       sx={styles.section}
       onSubmit={handleSubmit(onRegister)}>
-      {success && (
-        <Alert variant="success" mb={5}>
-          Selamat! kamu berhasil mendaftar, akan kami proses dalam 1x24jam yaa
-          <Close ml="auto" mr={-2} onClick={() => setSuccess(false)} />
-        </Alert>
-      )}
       <Box sx={styles.nameEmail} mb={3}>
         <Box>
           <Label htmlFor="full_name">Nama Lengkap</Label>
@@ -145,7 +139,7 @@ const FormRegister = () => {
           </Label>
         </Box>
       )}
-      {domainWatch && (
+      {domainWatch && packageWatch !== "Entry-Level" && (
         <Box>
           <Label htmlFor="domain_name">Nama Domain</Label>
           <Input
@@ -161,8 +155,7 @@ const FormRegister = () => {
           </Text>
         </Box>
       )}
-
-      <Box className="signup__message" mt={20}>
+      <Box mt={20}>
         <span className="">
           By creating an account, you agree to our{" "}
           <Link href="/tos">
@@ -170,13 +163,15 @@ const FormRegister = () => {
           </Link>
         </span>
       </Box>
-      <Button
-        className="button button--submit"
-        type="submit"
-        value="Submit"
-        mt={20}>
+      <Button type="submit" value="Submit" mt={20}>
         {loading ? "Mengirim data..." : "Daftar"}
       </Button>
+      {success && (
+        <Alert variant="success" mt={5}>
+          Selamat! kamu berhasil mendaftar, akan kami proses dalam 1x24jam yaa
+          <Close ml="auto" mr={-2} onClick={() => setSuccess(false)} />
+        </Alert>
+      )}
     </Box>
   );
 };

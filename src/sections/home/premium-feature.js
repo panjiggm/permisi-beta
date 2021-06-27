@@ -9,29 +9,24 @@ import emoji from "assets/images/icons/emoji-2.png";
 
 const data = [
   {
-    title: "Organize your project content",
+    title: "Kelola konten produk kamu",
+    contents: <div>Tambah produk item kamu sesuka hati sebanyak mungkin</div>,
+  },
+  {
+    title: "Langsung pesan via WhtasApp? Bisa!",
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        Sebelum client memutuskan untuk memebeli produk kamu, client bisa
+        tanya-tanya dulu ke kamu supaya lebih yakin
       </div>
     ),
   },
   {
-    title: "Collaborate your documents easily",
+    title: "Jualan semudah menjentikan jari",
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
-      </div>
-    ),
-  },
-  {
-    title: `Build your team's knowledge base`,
-    contents: (
-      <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        Miliki link ajaib atau domain untuk wesite kamu sendiri, kamu dapat
+        dengan mudah dalam mempromosikan.
       </div>
     ),
   },
@@ -50,7 +45,7 @@ const PremiumFeature = () => {
               emoji={emoji}
               sx={styles.heading}
               title="Temukan fitur keren yang dapat membuat kamu berkata wow"
-              description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+              description="Dengan 0 Rupiah kamu bisa punya website untuk jualan dengan fitur dan tampilan yang keren"
             />
             <Box sx={styles.accordionGroup}>
               <Accordion items={data} />

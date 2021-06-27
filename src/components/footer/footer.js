@@ -1,29 +1,22 @@
 /** @jsx jsx */
 import { jsx, Flex, Box, Text, Container } from "theme-ui";
 import { rgba } from "polished";
-import { Link } from "components/link";
+// import { Link } from "components/link";
+import Link from "next/link";
 import Logo from "components/logo";
 
 const menuItems = [
   {
-    path: "#home",
+    path: "",
     label: "Home",
   },
   {
-    path: "#advertise",
-    label: "Advertise",
+    path: "/tos",
+    label: "Terms & Condition",
   },
   {
-    path: "#supports",
-    label: "Supports",
-  },
-  {
-    path: "#marketing",
-    label: "Marketing",
-  },
-  {
-    path: "#faq",
-    label: "FAQ",
+    path: "/pricing",
+    label: "Pricing",
   },
 ];
 
@@ -35,13 +28,15 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             <Logo isWhite />
             <Text as="span">
-              &copy; Copyright by {new Date().getFullYear()} Permisi
+              &copy; Copyright by {new Date().getFullYear()} Beliyuk
             </Text>
           </Flex>
           <Flex as="ul" sx={styles.footerNav}>
             {menuItems?.map((item, index) => (
               <li key={index}>
-                <Link path={item?.path}>{item?.label}</Link>
+                <Link href={item?.path}>
+                  <a>{item?.label}</a>
+                </Link>
               </li>
             ))}
           </Flex>

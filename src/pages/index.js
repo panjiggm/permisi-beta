@@ -15,7 +15,7 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Home | Permisi" description="Excusme guys!" />
+        <SEO title="Home | Beliyuk" description="Selamat datang di Beliyuk!" />
         <Banner />
         <WhoUs />
         <PremiumFeature />

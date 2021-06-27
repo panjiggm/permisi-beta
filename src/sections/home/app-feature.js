@@ -45,7 +45,7 @@ const AppFeature = () => {
               sx={styles.heading}
               // title="Built in one app to make instant reply with in lowest minutes"
               title="Dibuat untuk memudahkan kamu menjual produk secara instant"
-              description="Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever."
+              description="Kamu cukup menginput produk item, dan biarkan sistem menjalankan tugas selanjutnya"
             />
             <Box sx={styles.features}>
               {data?.map(({ id, label }) => (

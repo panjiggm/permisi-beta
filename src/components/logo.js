@@ -1,12 +1,12 @@
 /** @jsx jsx */
 import { jsx, Text } from "theme-ui";
 import { Link } from "components/link";
-import logo from "assets/images/permisi-logo.png";
 
 export default function Logo({ isWhite, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-      <img src={logo} style={{ objectFit: "fill", height: 60 }} />
+      {/* <img src={logo} style={{ objectFit: "fill", height: 60 }} /> */}
+      <Text sx={styles.logoText}>Beliyuk</Text>
     </Link>
   );
 }

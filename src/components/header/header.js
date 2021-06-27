@@ -5,11 +5,9 @@ import Sticky from "react-stickynode";
 import { useState } from "react";
 import { DrawerProvider } from "contexts/drawer/drawer-provider";
 import NavbarDrawer from "./navbar-drawer";
-import Image from "components/image";
 import Logo from "components/logo";
 
 import menuItems from "./header.data";
-import lock from "assets/images/icons/lock.png";
 
 export default function Header() {
   const [state, setState] = useState({
@@ -54,13 +52,11 @@ export default function Header() {
                   </Box>
                 </Flex>
                 <Flex sx={styles.buttonGroup}>
-                  <button sx={styles.login}>
-                    <Image src={lock} alt="lock icon" />
-                    Login
-                  </button>
-                  <Button variant="text" sx={styles.getStarted}>
-                    Get Started
-                  </Button>
+                  <Link href="/register">
+                    <Button variant="text" sx={styles.getStarted}>
+                      Daftar
+                    </Button>
+                  </Link>
                 </Flex>
                 <NavbarDrawer />
               </Box>
@@ -137,30 +133,10 @@ const styles = {
   getStarted: {
     backgroundColor: "#FEE2E2",
     color: "#EF4444",
-    p: ["0 16px"],
+    p: ["0 26px"],
     minHeight: 45,
     ml: [6],
     display: ["none", null, null, null, "flex"],
-  },
-  login: {
-    backgroundColor: "transparent",
-    position: ["absolute", null, null, null, "static"],
-    color: "text",
-    fontSize: [2],
-    fontWeight: 500,
-    top: "50%",
-    p: 0,
-    transform: ["translateY(-50%)", null, null, null, "none"],
-    right: 79,
-    border: 0,
-    fontFamily: "body",
-    display: "flex",
-    alignItems: "center",
-    outline: 0,
-    img: {
-      maxWidth: 14,
-      mr: 2,
-    },
   },
   menuButton: {
     position: "relative",

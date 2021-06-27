@@ -34,7 +34,7 @@ const WhoUs = () => {
     <Container>
       <Box sx={styles.heading}>
         <Heading sx={styles.title}>
-          <span sx={styles.brand}>Permisi</span> para hadirin...
+          <span sx={styles.brand}>Beliyuk</span> para hadirin...
         </Heading>
         <Text as="p" sx={styles.description}>
           Kami adalah platform Jamstack pertama di Indonesia yang menyediakan{" "}

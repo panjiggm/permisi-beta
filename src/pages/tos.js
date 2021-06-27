@@ -9,26 +9,26 @@ const Tos = () => {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          title="Terms and Conditions | Permisi"
+          title="Terms and Conditions | Beliyuk"
           description="Terms and Conditions yang anda harus setujui ketika mendaftar"
         />
         <Box as="section" sx={styles.section}>
           <Container>
             <SectionHeading
               sx={styles.heading}
-              title="Permisi"
+              title="Beliyuk"
               description="Terms and Conditions"
             />
 
             <div>
-              <Text sx={styles.justify}>Welcome to Permisi ID!</Text>
+              <Text sx={styles.justify}>Welcome to Beliyuk!</Text>
               <Text sx={styles.justify}>
                 These terms and conditions outline the rules and regulations for
-                the use of Permisi's Website, located at https://permisi.id.
+                the use of Beliyuk's Website, located at https://beliyuk.co.
               </Text>
               <Text sx={styles.justify}>
                 By accessing this website we assume you accept these terms and
-                conditions. Do not continue to use Permisi ID if you do not
+                conditions. Do not continue to use Beliyuk ID if you do not
                 agree to take all of the terms and conditions stated on this
                 page.
               </Text>
@@ -53,8 +53,8 @@ const Tos = () => {
                 <strong>Cookies</strong>
               </h3>
               <Text sx={styles.justify}>
-                We employ the use of cookies. By accessing Permisi ID, you
-                agreed to use cookies in agreement with the Permisi's Privacy
+                We employ the use of cookies. By accessing Beliyuk ID, you
+                agreed to use cookies in agreement with the Beliyuk's Privacy
                 Policy.{" "}
               </Text>
               <Text sx={styles.justify}>
@@ -68,18 +68,18 @@ const Tos = () => {
                 <strong>License</strong>
               </h3>
               <Text sx={styles.justify}>
-                Unless otherwise stated, Permisi and/or its licensors own the
-                intellectual property rights for all material on Permisi ID. All
+                Unless otherwise stated, Beliyuk and/or its licensors own the
+                intellectual property rights for all material on Beliyuk ID. All
                 intellectual property rights are reserved. You may access this
-                from Permisi ID for your own personal use subjected to
+                from Beliyuk ID for your own personal use subjected to
                 restrictions set in these terms and conditions.
               </Text>
               <Text sx={styles.justify}>You must not:</Text>
               <ul>
-                <li>Republish material from Permisi ID</li>
-                <li>Sell, rent or sub-license material from Permisi ID</li>
-                <li>Reproduce, duplicate or copy material from Permisi ID</li>
-                <li>Redistribute content from Permisi ID</li>
+                <li>Republish material from Beliyuk ID</li>
+                <li>Sell, rent or sub-license material from Beliyuk ID</li>
+                <li>Reproduce, duplicate or copy material from Beliyuk ID</li>
+                <li>Redistribute content from Beliyuk ID</li>
               </ul>
               <Text sx={styles.justify}>
                 This Agreement shall begin on the date hereof. Our Terms and
@@ -92,18 +92,18 @@ const Tos = () => {
               <Text sx={styles.justify}>
                 Parts of this website offer an opportunity for users to post and
                 exchange opinions and information in certain areas of the
-                website. Permisi does not filter, edit, publish or review
+                website. Beliyuk does not filter, edit, publish or review
                 Comments prior to their presence on the website. Comments do not
-                reflect the views and opinions of Permisi,its agents and/or
+                reflect the views and opinions of Beliyuk,its agents and/or
                 affiliates. Comments reflect the views and opinions of the
                 person who post their views and opinions. To the extent
-                permitted by applicable laws, Permisi shall not be liable for
+                permitted by applicable laws, Beliyuk shall not be liable for
                 the Comments or for any liability, damages or expenses caused
                 and/or suffered as a result of any use of and/or posting of
                 and/or appearance of the Comments on this website.
               </Text>
               <Text sx={styles.justify}>
-                Permisi reserves the right to monitor all Comments and to remove
+                Beliyuk reserves the right to monitor all Comments and to remove
                 any Comments which can be considered inappropriate, offensive or
                 causes breach of these Terms and Conditions.
               </Text>
@@ -130,7 +130,7 @@ const Tos = () => {
                 </li>
               </ul>
               <Text sx={styles.justify}>
-                You hereby grant Permisi a non-exclusive license to use,
+                You hereby grant Beliyuk a non-exclusive license to use,
                 reproduce, edit and authorize others to use, reproduce and edit
                 any of your Comments in any and all forms, formats or media.
               </Text>
@@ -185,7 +185,7 @@ const Tos = () => {
                 ourselves or to our accredited businesses; (b) the organization
                 does not have any negative records with us; (c) the benefit to
                 us from the visibility of the hyperlink compensates the absence
-                of Permisi; and (d) the link is in the context of general
+                of Beliyuk; and (d) the link is in the context of general
                 resource information.
               </Text>
               <Text sx={styles.justify}>
@@ -198,7 +198,7 @@ const Tos = () => {
               <Text sx={styles.justify}>
                 If you are one of the organizations listed in paragraph 2 above
                 and are interested in linking to our website, you must inform us
-                by sending an e-mail to Permisi. Please include your name, your
+                by sending an e-mail to Beliyuk. Please include your name, your
                 organization name, contact information as well as the URL of
                 your site, a list of any URLs from which you intend to link to
                 our Website, and a list of the URLs on our site to which you
@@ -219,7 +219,7 @@ const Tos = () => {
                 </li>
               </ul>
               <Text sx={styles.justify}>
-                No use of Permisi's logo or other artwork will be allowed for
+                No use of Beliyuk's logo or other artwork will be allowed for
                 linking absent a trademark license agreement.
               </Text>
               <h3>
