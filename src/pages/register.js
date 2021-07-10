@@ -9,8 +9,8 @@ const Register = () => {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          title="Daftar | Beliyuk"
-          description="Daftar dan berlangganan Beliyuk"
+          title="Daftar | Permisi"
+          description="Daftar dan berlangganan Beliyuk di Permisi"
         />
         <Products />
       </Layout>

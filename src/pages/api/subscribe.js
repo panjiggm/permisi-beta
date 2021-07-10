@@ -1,10 +1,10 @@
-import { tableRegister } from "./utils/Airtable";
+import { tableEmail } from "./utils/Airtable";
 
 async function register(req, res) {
   const { fields } = req.body;
 
   try {
-    const createdRecords = await tableRegister.create([{ fields }]);
+    const createdRecords = await tableEmail.create([{ fields }]);
     const createdRecord = {
       id: createdRecords[0].id,
       fields: createdRecords[0].fields,

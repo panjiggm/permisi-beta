@@ -10,16 +10,18 @@ import AppFeature from "sections/home/app-feature";
 import Dashboard from "sections/home/dashboard";
 import Testimonials from "sections/home/testimonials";
 import Subscribe from "sections/home/subscribe";
+import TexchStack from "sections/home/tech-stack";
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Home | Beliyuk" description="Selamat datang di Beliyuk!" />
+        <SEO title="Home | Permisi" description="Selamat datang di Permisi!" />
         <Banner />
-        <WhoUs />
-        <PremiumFeature />
         {/* <Support /> */}
+        <WhoUs />
+        <TexchStack />
+        <PremiumFeature />
         <AppFeature />
         {/* <Dashboard />
         <Testimonials /> */}

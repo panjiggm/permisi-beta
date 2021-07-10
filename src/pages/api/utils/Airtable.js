@@ -3,7 +3,8 @@ var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
   process.env.AIRTABLE_BASE_ID
 );
 
-const table = base(process.env.AIRTABLE_TABLE_NAME);
+const tableRegister = base("register");
+const tableEmail = base("email");
 
 const minifyRecords = (records) => {
   return records.map((record) => {
@@ -14,4 +15,4 @@ const minifyRecords = (records) => {
   });
 };
 
-export { table, minifyRecords };
+export { tableRegister, tableEmail, minifyRecords };

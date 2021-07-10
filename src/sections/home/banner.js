@@ -5,23 +5,13 @@ import Image from "components/image";
 import SubscriptionForm from "components/subscription-form";
 import illustration from "assets/images/banner.png";
 import paypal from "assets/images/paypal.png";
-import google from "assets/images/google.png";
-import dropbox from "assets/images/dropbox.png";
 
-// const logos = [
-//   {
-//     name: "Paypal",
-//     src: paypal,
-//   },
-//   {
-//     name: "Google",
-//     src: google,
-//   },
-//   {
-//     name: "Dropbox",
-//     src: dropbox,
-//   },
-// ];
+const logos = [
+  {
+    name: "Beliyk",
+    src: paypal,
+  },
+];
 
 const Banner = () => {
   return (
@@ -38,8 +28,8 @@ const Banner = () => {
               kekinian
             </Text>
             <SubscriptionForm sx={styles.subscriptionForm} />
-            {/* <Flex sx={styles.sponsoredBy}>
-              <Text as="span">Sponsored by:</Text>
+            <Flex sx={styles.sponsoredBy}>
+              <Text as="span">Our Product :</Text>
               <Flex sx={styles.sponsor}>
                 {logos?.map((logo, index) => (
                   <Flex as="figure" key={index}>
@@ -47,7 +37,7 @@ const Banner = () => {
                   </Flex>
                 ))}
               </Flex>
-            </Flex> */}
+            </Flex>
           </Box>
           <Flex as="figure" sx={styles.bannerImage}>
             <Image src={illustration} alt="illustration" />

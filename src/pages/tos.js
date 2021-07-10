@@ -9,26 +9,26 @@ const Tos = () => {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          title="Terms and Conditions | Beliyuk"
+          title="Terms and Conditions | Permisi"
           description="Terms and Conditions yang anda harus setujui ketika mendaftar"
         />
         <Box as="section" sx={styles.section}>
           <Container>
             <SectionHeading
               sx={styles.heading}
-              title="Beliyuk"
+              title="Permisi"
               description="Terms and Conditions"
             />
 
             <div>
-              <Text sx={styles.justify}>Welcome to Beliyuk!</Text>
+              <Text sx={styles.justify}>Welcome to Permisi!</Text>
               <Text sx={styles.justify}>
                 These terms and conditions outline the rules and regulations for
-                the use of Beliyuk's Website, located at https://beliyuk.co.
+                the use of Permisi's Website, located at https://permisi.co.
               </Text>
               <Text sx={styles.justify}>
                 By accessing this website we assume you accept these terms and
-                conditions. Do not continue to use Beliyuk ID if you do not
+                conditions. Do not continue to use Permisi ID if you do not
                 agree to take all of the terms and conditions stated on this
                 page.
               </Text>

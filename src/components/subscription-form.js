@@ -1,32 +1,52 @@
 /** @jsx jsx */
 import { useState, useEffect } from "react";
-import { jsx, Flex, Input, Button, Label, Text } from "theme-ui";
-import Link from "next/link";
+import { jsx, Flex, Input, Button, Label } from "theme-ui";
+import { useSnackbar } from "react-simple-snackbar";
 
 const SubscriptionForm = ({ buttonLabel, ...props }) => {
+  const [openSnackbar] = useSnackbar();
   const [id, setId] = useState("");
-  const [yourBrand, setYourBrand] = useState("");
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setId(Date.now());
   }, []);
 
+  const handleSubscribe = async () => {
+    setLoading(true);
+
+    try {
+      await fetch("/api/subscribe", {
+        method: "POST",
+        body: JSON.stringify({ fields: { email } }),
+        headers: { "Content-Type": "application/json" },
+      });
+
+      openSnackbar("Terimakasih telah Subscribe!");
+      setLoading(false);
+      setEmail("");
+    } catch (error) {
+      console.log("err register", error);
+      setLoading(false);
+    }
+  };
+
   return (
-    <Flex as="form" sx={styles.form} {...props}>
-      <Text sx={styles.text}>beliyuk.co/</Text>
+    <Flex sx={styles.form} {...props}>
       <Label htmlFor={`email-${id}`} variant="styles.srOnly">
         Email
       </Label>
       <Input
         type="email"
         id={`email-${id}`}
-        placeholder="brandkamu"
-        value={yourBrand}
-        onChange={(e) => setYourBrand(e.target.value)}
+        placeholder="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
       />
-      <Link href="/register">
-        <Button>Coba Yuk!</Button>
-      </Link>
+      <Button onClick={handleSubscribe}>
+        {loading ? "Mengirim..." : "Subscibe"}
+      </Button>
     </Flex>
   );
 };

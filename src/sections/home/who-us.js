@@ -7,25 +7,25 @@ const data = [
     id: 1,
     icon: "🏗️",
     title: "Jamstack Architecture",
-    description: "Send money with three clicks by wire, check, or ACH.",
+    description: "Teknologi website kekinian yang stabil dan modern",
   },
   {
     id: 2,
     icon: "🚀",
     title: "Fast Performance",
-    description: "See where you’re making and spending money in real.",
+    description: "Performa cepat, ringan, tanpa loading",
   },
   {
     id: 3,
     icon: "🎨",
     title: "Intuitive Design",
-    description: "Choose the right tone and fast formality level.",
+    description: "Tampilan user friendly dan enak dipandang",
   },
   {
     id: 4,
     icon: "🏆",
     title: "Easy Setup",
-    description: `Keep secure with fluent 2-factor authentication full activity.`,
+    description: `Mudah dioperisakan se-awam apapun kamu`,
   },
 ];
 
@@ -34,7 +34,7 @@ const WhoUs = () => {
     <Container>
       <Box sx={styles.heading}>
         <Heading sx={styles.title}>
-          <span sx={styles.brand}>Beliyuk</span> para hadirin...
+          <span sx={styles.brand}>Permisi</span> para hadirin...
         </Heading>
         <Text as="p" sx={styles.description}>
           Kami adalah platform Jamstack pertama di Indonesia yang menyediakan{" "}

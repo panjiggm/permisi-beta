@@ -17,12 +17,6 @@ const data = [
     title: "Do you need help support",
     description: `Get your website ads tests delivered at let collect sample from the victory of the update managements services.`,
   },
-  {
-    id: 3,
-    icon: support,
-    title: "Do you need help support",
-    description: `Get your website ads tests delivered at let collect sample from the victory of the update managements services.`,
-  },
 ];
 
 const Support = () => {
@@ -63,9 +57,9 @@ const styles = {
       "repeat(1, 1fr)",
       null,
       null,
-      "repeat(3, 1fr)",
+      "repeat(2, 1fr)",
       null,
-      "repeat(3, 400px)",
+      "repeat(2, 400px)",
     ],
   },
   supportItem: {

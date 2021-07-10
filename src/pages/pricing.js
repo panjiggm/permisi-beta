@@ -9,7 +9,10 @@ const Pricing = () => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Harga | Beliyuk" description="Helo kami adalah Beliyuk" />
+        <SEO
+          title="Harga | Permisi"
+          description="Pilihan harga terjangkau di Permisi"
+        />
         <Package />
         <FaqPrice />
       </Layout>
