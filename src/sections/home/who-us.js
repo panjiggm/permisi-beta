@@ -79,7 +79,7 @@ const styles = {
   },
   features: {
     gap: ["35px 60px", 60, 60, 40, 30, 60],
-    pb: [6, null, null, null, 7, 9, 11, null],
+    pb: [12, null, null, null, 13, 15, 15, null],
     display: ["grid", "grid"],
     gridTemplateColumns: [
       "repeat(1, 1fr)",

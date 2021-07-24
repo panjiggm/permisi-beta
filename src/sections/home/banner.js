@@ -19,9 +19,8 @@ const Banner = () => {
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
-            <Heading as="h1">
-              Minimum superset e-commerce untuk melangitkan produk kamu
-            </Heading>
+            <Text as="h6">Introducing Permisi</Text>
+            <Heading as="h1">Jamstack Site Specialist</Heading>
             <Text as="p">
               Saatnya produk kamu memiliki situs resmi dengan design yang
               intuitif, performa yang cepat, menggunakan teknologi Jamstack yang
@@ -81,6 +80,13 @@ const styles = {
         fontSize: 12,
         lineHeight: 1.5,
       },
+    },
+    h6: {
+      fontSize: "15px",
+      fontWeight: 700,
+      color: "primary",
+      display: "block",
+      lineHeight: 2,
     },
     p: {
       fontSize: [1, null, null, 2, 3],

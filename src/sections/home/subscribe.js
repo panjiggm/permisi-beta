@@ -9,12 +9,12 @@ const Subscribe = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Pensaran belum?"
+          title="Penasaran belum? Ada pertanyaan?"
           description="Hanya perlu beberapa menit saja untuk memulai lalu mengudara 🚀"
         />
         <Box css={{ display: "flex", justifyContent: "center" }}>
           <Link href="/register">
-            <Button>Mulai Sekarang</Button>
+            <Button>Hubungi Kami</Button>
           </Link>
         </Box>
       </Container>
@@ -27,6 +27,7 @@ export default Subscribe;
 const styles = {
   section: {
     backgroundColor: "#353448",
+    mt: [50, null, null, null, 100],
     pt: [9, null, null, null, 10, 13, null],
     pb: [9, null, null, null, 11, 14, null],
   },

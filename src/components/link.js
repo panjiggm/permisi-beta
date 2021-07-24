@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import NextLink from 'next/link';
-import { jsx, Link as A } from 'theme-ui';
-import { Link as MenuLink } from 'react-scroll';
-import { HiOutlineChevronRight } from 'react-icons/hi';
+import NextLink from "next/link";
+import { jsx, Link as A } from "theme-ui";
+import { Link as MenuLink } from "react-scroll";
+import { HiOutlineChevronRight } from "react-icons/hi";
 
 export function NavLink({ path, label, children, ...rest }) {
   return (
@@ -14,8 +14,7 @@ export function NavLink({ path, label, children, ...rest }) {
       duration={500}
       className="nav-item"
       activeClass="active"
-      {...rest}
-    >
+      {...rest}>
       {label}
     </MenuLink>
   );
@@ -31,28 +30,30 @@ export function Link({ path, label, children, ...rest }) {
 
 export function LearnMore({ path, label, children, ...rest }) {
   return (
-    <NextLink href={path}>
+    <a href={path} target="_blank_">
       <A sx={styles.learnMore} {...rest}>
-        {label ?? 'Learn More'} <HiOutlineChevronRight />
+        {label ?? "Learn More"} <HiOutlineChevronRight />
       </A>
-    </NextLink>
+    </a>
   );
 }
 
 const styles = {
   learnMore: {
-    color: 'link',
-    cursor: 'pointer',
+    mt: 6,
+    color: "link",
+    textDecoration: "none",
+    cursor: "pointer",
     fontWeight: 500,
-    display: 'inline-flex',
-    alignItems: 'center',
+    display: "inline-flex",
+    alignItems: "center",
     svg: {
-      transition: 'margin-left 0.3s ease-in-out 0s',
-      ml: '3px',
+      transition: "margin-left 0.3s ease-in-out 0s",
+      ml: "3px",
     },
-    ':hover': {
+    ":hover": {
       svg: {
-        ml: '5px',
+        ml: "5px",
       },
     },
   },

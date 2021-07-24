@@ -8,7 +8,7 @@ import VercelLogo from "assets/images/vercel.png";
 import GithubLogo from "assets/images/github.png";
 import AirtableLogo from "assets/images/airtable.png";
 import CloudinaryLogo from "assets/images/cloudinary.png";
-import ChakraLogo from "assets/images/chakra.png";
+import WordpressLogo from "assets/images/wordpress.png";
 import NodeLogo from "assets/images/nodejs.png";
 
 const services = [
@@ -37,8 +37,8 @@ const services = [
     img: CloudinaryLogo,
   },
   {
-    title: "Chakra UI",
-    img: ChakraLogo,
+    title: "Wordpress",
+    img: WordpressLogo,
   },
   {
     title: "NodeJS",

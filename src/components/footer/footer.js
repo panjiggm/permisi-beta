@@ -28,7 +28,7 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             <Logo isWhite />
             <Text as="span">
-              &copy; Copyright by {new Date().getFullYear()} Beliyuk
+              &copy; Copyright {new Date().getFullYear()} Permisi
             </Text>
           </Flex>
           <Flex as="ul" sx={styles.footerNav}>

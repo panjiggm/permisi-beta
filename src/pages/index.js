@@ -4,13 +4,15 @@ import SEO from "components/seo";
 import Layout from "components/layout";
 import Banner from "sections/home/banner";
 import WhoUs from "sections/home/who-us";
-import Support from "sections/home/support";
-import PremiumFeature from "sections/home/premium-feature";
-import AppFeature from "sections/home/app-feature";
-import Dashboard from "sections/home/dashboard";
-import Testimonials from "sections/home/testimonials";
+// import Support from "sections/home/support";
+// import PremiumFeature from "sections/home/premium-feature";
+// import AppFeature from "sections/home/app-feature";
+// import Dashboard from "sections/home/dashboard";
+// import Testimonials from "sections/home/testimonials";
+import Jamstack from "sections/home/jamstack";
 import Subscribe from "sections/home/subscribe";
 import TexchStack from "sections/home/tech-stack";
+import CallToAction from "sections/home/call-to-action";
 
 export default function IndexPage() {
   return (
@@ -20,9 +22,10 @@ export default function IndexPage() {
         <Banner />
         {/* <Support /> */}
         <WhoUs />
+        <Jamstack />
         <TexchStack />
-        <PremiumFeature />
-        <AppFeature />
+        <CallToAction />
+        {/* <PremiumFeature /> */}
         {/* <Dashboard />
         <Testimonials /> */}
         <Subscribe />
