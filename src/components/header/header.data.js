@@ -4,7 +4,11 @@ export default [
     label: "Home",
   },
   {
-    path: "pricing",
-    label: "Pricing",
+    path: "beliyuk",
+    label: "Beliyuk",
+  },
+  {
+    path: "jamsite",
+    label: "JamSite",
   },
 ];

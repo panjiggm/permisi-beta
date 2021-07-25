@@ -1,28 +1,30 @@
 /** @jsx jsx */
-import Link from "next/link";
 import { jsx, Box, Container, Button } from "theme-ui";
 import SectionHeading from "components/section-heading";
 
-const Subscribe = () => {
+const RegisterBeliyuk = () => {
   return (
     <Box as="section" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Ada pertanyaan?"
-          description="Kami dengan senang hati menjawab semua pertanyaan kamu 😊"
+          title="Penasaran belum?"
+          description="Hanya perlu beberapa menit saja untuk memulai lalu mengudara 🚀"
         />
         <Box css={{ display: "flex", justifyContent: "center" }}>
-          <Link href="/register">
-            <Button>Hubungi Kami</Button>
-          </Link>
+          <a
+            href="https://beliyuk.co/"
+            target="_blank_"
+            style={{ textDecoration: "none" }}>
+            <Button>Mulai Sekarang</Button>
+          </a>
         </Box>
       </Container>
     </Box>
   );
 };
 
-export default Subscribe;
+export default RegisterBeliyuk;
 
 const styles = {
   section: {

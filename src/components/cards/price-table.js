@@ -44,9 +44,14 @@ const PriceTable = ({ price, isAnnual }) => {
         ))}
       </Box>
       <Box className="priceButton">
-        <Button sx={styles.button} variant="primaryMd">
-          {price.buttonText}
-        </Button>
+        <a
+          href="https://beliyuk.co"
+          target="_blank_"
+          style={{ textDecoration: "none" }}>
+          <Button sx={styles.button} variant="primaryMd">
+            {price.buttonText}
+          </Button>
+        </a>
         {price.demo !== null ? (
           <a
             href={price.demo}

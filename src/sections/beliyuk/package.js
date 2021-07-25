@@ -58,8 +58,8 @@ const data = [
     subtitle:
       "Seharga semangkok Seblak, makin terpercaya dengan punya domain sendiri",
     amount: {
-      monthly: 15000,
-      annual: 15000 * 12 - 10,
+      monthly: 19000,
+      annual: 19000 * 12 - 10,
     },
     isRecommended: true,
     buttonText: "Mulai Sekarang",
@@ -103,8 +103,8 @@ const data = [
     subtitle:
       "Brand kamu udah bagus? tapi belum punya web resminya, berati kamu cocoknya disini",
     amount: {
-      monthly: 35000,
-      annual: 35000 * 12 - 10,
+      monthly: 49000,
+      annual: 49000 * 12 - 10,
     },
     isRecommended: false,
     buttonText: "Segera Hadir",

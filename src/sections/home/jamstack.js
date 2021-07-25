@@ -37,7 +37,7 @@ const Jamstack = () => {
               sx={styles.heading}
               // title="Built in one app to make instant reply with in lowest minutes"
               title="Apa itu Jamstack?"
-              description="Cara modern untuk membangun Situs Web dan Aplikasi yang memberikan kinerja lebih baik"
+              description="Cara modern untuk membangun Situs Web dan Aplikasi yang memberikan kinerja jauh lebih baik"
             />
             <Box sx={styles.features}>
               {data?.map(({ id, label }) => (
