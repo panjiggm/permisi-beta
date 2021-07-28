@@ -19,7 +19,7 @@ const Banner = () => {
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
-            <Text as="h6">Introducing Permisi</Text>
+            <Text as="h6">Introducing Permisi (under development)</Text>
             <Heading as="h1">Jamstack Site Specialist</Heading>
             <Text as="p">
               Saatnya produk kamu memiliki situs resmi dengan design yang
@@ -27,7 +27,7 @@ const Banner = () => {
               kekinian
             </Text>
             <SubscriptionForm sx={styles.subscriptionForm} />
-            <Flex sx={styles.sponsoredBy}>
+            {/* <Flex sx={styles.sponsoredBy}>
               <Text as="span">Our Product :</Text>
               <Flex sx={styles.sponsor}>
                 {logos?.map((logo, index) => (
@@ -36,7 +36,7 @@ const Banner = () => {
                   </Flex>
                 ))}
               </Flex>
-            </Flex>
+            </Flex> */}
           </Box>
           <Flex as="figure" sx={styles.bannerImage}>
             <Image src={illustration} alt="illustration" />

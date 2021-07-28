@@ -5,7 +5,7 @@ import SEO from "components/seo";
 import BeliyukHero from "sections/beliyuk/beliyuk-hero";
 import PremiumFeature from "sections/beliyuk/premium-feature";
 import AppFeature from "sections/beliyuk/app-feature";
-import Package from "sections/beliyuk/package";
+import Package from "sections/beliyuk/package-beliyuk";
 import RegisterBeliyuk from "sections/beliyuk/register-beliyuk";
 import FaqPrice from "sections/beliyuk/faq-price";
 
