@@ -3,7 +3,8 @@ import { Box, Container, Flex, Text, Heading } from "theme-ui";
 import { Link as BtnLink } from "components/link";
 import SectionHeading from "components/section-heading";
 
-// import callImage from 'assets/call-image.png';
+import beliyuk from "assets/images/beliyuk-illustration.png";
+import jamsite from "assets/images/jamsite-illustration.png";
 
 const CallToAction = () => {
   return (
@@ -15,6 +16,7 @@ const CallToAction = () => {
         />
         <Flex sx={styles.flex}>
           <Box sx={styles.content}>
+            <img src={beliyuk} height={100} />
             <Text as="span">Beliyuk</Text>
             <Heading as="h3">A minimum superset e-commerce</Heading>
             <Text as="p">
@@ -30,6 +32,7 @@ const CallToAction = () => {
             </Link>
           </Box>
           <Box sx={styles.content}>
+            <img src={jamsite} height={100} />
             <Text as="span">Jam-Site</Text>
             <Heading as="h3">Custom Jamstack website by request</Heading>
             <Text as="p">
@@ -38,7 +41,7 @@ const CallToAction = () => {
               akan bantu mulai dari design (jika belum ada) hingga menjadi
               produk yang siap mengudara
             </Text>
-            <Link href="/beliyuk">
+            <Link href="/jamsite">
               <BtnLink path="#" sx={styles.button}>
                 <a>Selengkapnya</a>
               </BtnLink>
@@ -70,6 +73,7 @@ const styles = {
     mx: ["auto", null, null, null, "0"],
     mb: ["30px", null, null, null, "0"],
     span: {
+      mt: 5,
       fontSize: "18px",
       fontWeight: 700,
       color: "primary",

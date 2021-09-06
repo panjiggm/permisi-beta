@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { useState } from "react";
 import { keyframes } from "@emotion/core";
-import { jsx, Box, Grid, Container, Flex, Text, Button } from "theme-ui";
+import { jsx, Box, Container, Flex, Text } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import PriceTable from "components/cards/price-table";
 import Switch from "components/switch";

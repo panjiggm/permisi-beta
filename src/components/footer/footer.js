@@ -7,7 +7,7 @@ import Logo from "components/logo";
 
 const menuItems = [
   {
-    path: "",
+    path: "/",
     label: "Home",
   },
   {
@@ -15,8 +15,12 @@ const menuItems = [
     label: "Terms & Condition",
   },
   {
-    path: "/pricing",
-    label: "Pricing",
+    path: "/beliyuk",
+    label: "Beliyuk",
+  },
+  {
+    path: "/jamsite",
+    label: "Jamsite",
   },
 ];
 
@@ -34,8 +38,8 @@ export default function Footer() {
           <Flex as="ul" sx={styles.footerNav}>
             {menuItems?.map((item, index) => (
               <li key={index}>
-                <Link href={item?.path}>
-                  <a>{item?.label}</a>
+                <Link href={item.path}>
+                  <a>{item.label}</a>
                 </Link>
               </li>
             ))}
